@@ -15,6 +15,20 @@
 ## 크롤링은 로컬에서만 사용 가능하다.
 서버는 안되는건가보다. <br>
 
+[참고 코드1. Key.RETURN, Key.BACKSPACE, ... 등](https://coding-kindergarten.tistory.com/151) <br>
+[참고 코드2. Key.BACKSPACE 사용 코드 (쓸모는 없었는데 driver.implicitly_wait(0.1)의 쓸모를 기억해내게 함.)](https://www.tutorialspoint.com/how-do-i-send-a-delete-keystroke-to-a-text-field-using-selenium-with-python) <br>
+
+
+# 자동화 기술은 어쩌면 개인 시간(양치하는 시간, 잠자는 시간 같이 사소한 것부터 자기계발 시간 같이 중요한 시간까지)을 벌어주는게 아닐까
+라는 생각을 하게됐다.
+대략 200만회의 클릭 수를 몇 번의 실행만으로 줄여냈다.
+
+하지만 코드에 에러가 발생하는 문제가 있어 꽤나 골치가 아프긴 했다.
+
+그러나 단순히 앉아서 일일이 누르고 있는 것 보다는 당연히 훨씬 나은 선택이긴하다.
+
+
+
 
 ## 날짜 list 만드는 코드... (월의 시작일과 말일만 있으면 되는데.... 잘못해서 다 넣어버림...)
 
