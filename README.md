@@ -14,3 +14,55 @@
 
 ## 크롤링은 로컬에서만 사용 가능하다.
 서버는 안되는건가보다. <br>
+
+
+## 날짜 list 만드는 코드... (월의 시작일과 말일만 있으면 되는데.... 잘못해서 다 넣어버림...)
+
+```python
+# 윤년list (4년에 한 번씩)
+윤년list = [2020 - i*4 for i in range(5)]
+
+
+# 날짜list
+날짜lst = []
+for 연도 in range(2001, 2022):
+    for 월 in range(1, 13):
+        if 월 in [1, 3, 5, 7, 8, 10, 12]:
+            for 일 in range(1, 32):
+                날짜lst.append(f'{연도}-{월}-{일}')
+            
+        elif 월 in [4, 6, 9, 11]:
+            for 일 in range(1, 31):
+                날짜lst.append(f'{연도}-{월}-{일}')
+                
+        elif 월 == 2:
+            for 일 in range(1, 30):
+                if 연도 not in 윤년list:
+                    if 일 == 29:
+                        pass
+                    else:
+                        날짜lst.append(f'{연도}-{월}-{일}')
+                else:
+                    날짜lst.append(f'{연도}-{월}-{일}')
+
+
+## 머리가 아프니, 2022년은 따로 만들어서 붙이도록 한다.
+for 월 in range(1, 7):
+    if 월 in [1, 3, 5, 7, 8, 10, 12]:
+        for 일 in range(1, 32):
+            날짜lst.append(f'{2022}-{월}-{일}')
+
+    elif 월 in [4, 6, 9, 11]:
+        for 일 in range(1, 31):
+            날짜lst.append(f'{2022}-{월}-{일}')
+
+    elif 월 == 2:
+        for 일 in range(1, 30):
+            if 2022 not in 윤년list:
+                if 일 == 29:
+                    pass
+                else:
+                    날짜lst.append(f'{2022}-{월}-{일}')
+            else:
+                날짜lst.append(f'{2022}-{월}-{일}')
+```
