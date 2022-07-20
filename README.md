@@ -52,7 +52,8 @@
     from selenium.webdriver.common.by import By # 이건 원래도 썼었음.
     
     # 원래
-    
+    browser.find_element_by_xpath("")
+
     # update 되면서 바뀐 부분
     driver.find_element(By.XPATH, " ")
     driver.find_elements(By.XPATH, " ")
