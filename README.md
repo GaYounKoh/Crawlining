@@ -38,8 +38,28 @@
 
 - 잘 짠 코드 하나 열 연구원 안부럽다........ <br>
 
+# 220720
+- selenium update issue
+아니 업데이트는 6월 29일에나 됐는데 왜 내가 코드 짤 때는 아무렇지 않았다가 이제야 에러가 나서는... <br>
+몹시 화가 나지만...... 그러려니... <br>
+그래도 처음에 짤 때 에러가 안나서 전체적인 코드 이해 했으니까... <br>
+아 그리고 chromedriver도 교수님 컴퓨터에서는 앞에 path랑 뒤에 .exe 확장자 붙여줘야함.
 
+    - update 내역
+    [한국인 작성자의 빡침이 드러나는 페이지로 확인](https://velog.io/@thovy/selenium-AttributeError-Webdriver-object-has-no-attribute-findelementbyid) <br>
+    [stack over flow의 문답으로 확인](https://stackoverflow.com/questions/72773206/selenium-python-attributeerror-webdriver-object-has-no-attribute-find-el) <br>
+    ```python
+    from selenium.webdriver.common.by import By # 이건 원래도 썼었음.
+    
+    # 원래
+    
+    # update 되면서 바뀐 부분
+    driver.find_element(By.XPATH, " ")
+    driver.find_elements(By.XPATH, " ")
 
+    driver.find_element(By.CLASS_NAME, " ")
+    driver.find_elements(By.CLASS_NAME, " ")
+    ```
 
 
 ## 날짜 list 만드는 코드... (월의 시작일과 말일만 있으면 되는데.... 잘못해서 다 넣어버림...)
