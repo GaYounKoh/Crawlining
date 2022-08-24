@@ -1,0 +1,9 @@
+win + R 키
+cmd 검색 + enter
+
+명령어 입력
+cd C:\Users\Admin\바탕 화면\다운로드
+jupyter notebook
+
+자동으로 열리는 edge 말고
+크롬으로 열어야 함.
