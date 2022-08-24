@@ -56,7 +56,7 @@ f'지역으로만 따졌을 때 다운받는데 걸리는 시간 : 지역 수 * 
 그래도 처음에 짤 때 에러가 안나서 전체적인 코드 이해 했으니까... <br>
 아 그리고 chromedriver도 교수님 컴퓨터에서는 앞에 path랑 뒤에 .exe 확장자 붙여줘야함.
 
-    - update 내역
+    - update 내역 <br>
     [한국인 작성자의 빡침이 드러나는 페이지로 확인](https://velog.io/@thovy/selenium-AttributeError-Webdriver-object-has-no-attribute-findelementbyid) <br>
     [stack over flow의 문답으로 확인](https://stackoverflow.com/questions/72773206/selenium-python-attributeerror-webdriver-object-has-no-attribute-find-el) <br>
     ```python
@@ -138,6 +138,28 @@ iris = iris.drop(iris.columns[[0,1,3]], axis=1)
 (479808, 25) <br>
 
 <br>
+
+## 220824 모든 과정 종료... 일 뻔 했지만 교수님과 최종 미팅을 못함.
+- 이슈사항
+`<사망>`의 경우 "군구" 열이 따로 없음. <br>
+
+데이터 컬럼은 <br>
+`<발생>`의 경우 <br>
+`['연도', '월', '급수', '병', '시도', '군구', '발생수']` <br>
+
+`<사망>`의 경우 "군구" 열이 빠져서<br>
+`['연도', '월', '급수', '병', '시도', '사망수']` <br>
+
+`<성별>`의 경우 <br>
+`['연도', '급수', '병', '시도', '군구', '0~4세_남', '0~4세_여', ...]` <br>
+
+로 구성되어있음. <br>
+
+`<발생>`의 경우 최종 데이터 완성 후에 결측이 없어서 합치기 전의 원본 데이터를 (258개 모두) 확인해보니 애초에 결측이 없고 다 0으로 되어있었음. <br>
+`<사망>`, `<성별>`의 경우 결측 부분을 전부 NaN으로 바꾸는 처리를 하였음. <br>
+<br>
+<br>
+
 
 
 
